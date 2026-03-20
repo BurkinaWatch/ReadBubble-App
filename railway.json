@@ -1,0 +1,12 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "npm install --legacy-peer-deps && rm -rf dist && npm run build && test -f dist/index.html || (echo 'ERROR: expo export failed, dist/index.html missing' && exit 1)"
+  },
+  "deploy": {
+    "startCommand": "node server/server.js",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 3
+  }
+}

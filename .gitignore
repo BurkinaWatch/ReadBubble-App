@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.expo/
+*.log
+npm-debug.log*
+.DS_Store
+.env
+.env.local
+.env.production
+*.tgz
+.pnp
+.pnp.js
